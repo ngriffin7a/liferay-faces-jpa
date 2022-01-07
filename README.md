@@ -4,11 +4,11 @@ This is an OSGi bundle that claims to provide the "JavaJPA" capability via OSGI 
 
 ## Usage
 
-Copy this jar to $LIFERAY_HOME/modules in order to suppress the following error when primefaces-11.0.0.jar fails to start as an OSGi module do to the following error:
+Copy this jar to $LIFERAY_HOME/osgi/modules in order to suppress the following error when primefaces-11.0.0.jar fails to start as an OSGi module do to the following error:
 
     org.osgi.framework.BundleException: Could not resolve module: org.primefaces [1498]_ Require-Capability: osgi.contract; osgi.contract="JavaJPA"; filter:="(&(osgi.contract=JavaJPA)(version=2.2.0))"_
 
-Alternatively, copy and entire set of OSGi bundles to $LIFERAY_HOME/modules that support JPA, including a JPA implementation such as OpenJPA, Hibernate, or EclipseLink.
+Alternatively, copy and entire set of OSGi bundles to $LIFERAY_HOME/osgi/modules that support JPA, including a JPA implementation such as OpenJPA, Hibernate, or EclipseLink.
 
 ## License
 
